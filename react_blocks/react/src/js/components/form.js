@@ -7,7 +7,6 @@ class form extends React.Component {
     this.refs.form.reset();
   }
   render() {
-    console.log(this.props);
     return (
      <form ref="form" onSubmit={(e) => this.handleSubmit(e)}>
         <input type="text" ref="message" placeholder="Send this message to another block" />

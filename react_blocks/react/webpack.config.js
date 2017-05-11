@@ -9,7 +9,8 @@ let APP_DIR = path.resolve(__dirname, 'src/js');
 module.exports = {
   devtool: 'source-map',
   entry: {
-    app: APP_DIR + '/App.js',
+    block1: APP_DIR + '/Block1.js',
+    block2: APP_DIR + '/Block2.js',
     vendor: [
       'react',
       'react-dom',
@@ -19,7 +20,7 @@ module.exports = {
   },
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js',
+    filename: "[name].bundle.js"
   },
   plugins: [ /*
     new webpack.DefinePlugin({

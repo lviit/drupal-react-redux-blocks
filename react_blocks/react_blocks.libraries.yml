@@ -3,7 +3,12 @@ vendor_bundle:
   js:
     react/build/vendor.bundle.js: {}
 
-bundle:
+block_1_bundle:
   version: 1.x
   js:
-    react/build/bundle.js: {}
+    react/build/block1.bundle.js: {}
+
+block_2_bundle:
+  version: 1.x
+  js:
+    react/build/block2.bundle.js: {}
