@@ -1,6 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { mapStateToProps, mapDispachToProps } from '../MapToProps';
 
-class form extends React.Component {
+class Form extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.addToList(this.refs.message.value);
@@ -16,4 +18,4 @@ class form extends React.Component {
   }
 }
 
-export default form;
+export default connect(mapStateToProps, mapDispachToProps)(Form);
