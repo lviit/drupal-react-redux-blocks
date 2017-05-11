@@ -1,0 +1,9 @@
+vendor_bundle:
+  version: 1.x
+  js:
+    react/build/vendor.bundle.js: {}
+
+bundle:
+  version: 1.x
+  js:
+    react/build/bundle.js: {}

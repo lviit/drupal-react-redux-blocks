@@ -1,0 +1,6 @@
+name: React blocks
+type: module
+description: Provides a whole bunch of React blocks connected to the same redux store.
+core: 8.x
+version: VERSION
+package: Custom
