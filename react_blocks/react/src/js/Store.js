@@ -1,4 +1,5 @@
 import { createStore, compose } from 'redux';
+import persistState from 'redux-localstorage';
 
 // root reducer
 import rootReducer from './reducers/index';
@@ -10,6 +11,7 @@ const defaultState = {
 
 // redux dev tools
 const enhancers = compose(
+  persistState(),
   window.devToolsExtension ? window.devToolsExtension() : f => f
 );
 
