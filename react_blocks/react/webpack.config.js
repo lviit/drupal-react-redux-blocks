@@ -25,14 +25,14 @@ module.exports = {
     path: BUILD_DIR,
     filename: "[name].bundle.js"
   },
-  plugins: [ /*
+  plugins: [
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
-    }), */
+    }),
     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
-    /* new webpack.optimize.UglifyJsPlugin({
+     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
       },
@@ -44,7 +44,7 @@ module.exports = {
       test: /\.js$|\.css$|\.html$/,
       threshold: 10240,
       minRatio: 0.8
-    }) */
+    })
   ],
   resolve: {
     extensions: ['', '.js']
