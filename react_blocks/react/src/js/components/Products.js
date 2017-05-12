@@ -31,7 +31,7 @@ class Products extends React.Component {
         { this.state.products.data.slice(0, 10).map(product =>
         <li key={product.id}>
           <a href="" onClick={(e) => this.handleClick(e, product.title)}>
-            <h2>{product.title}</h2>
+            <strong>{product.title}</strong>
             <p>{product.body}</p>
           </a>
         </li>)}

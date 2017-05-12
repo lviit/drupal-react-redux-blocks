@@ -5,3 +5,10 @@ export function addToList(message) {
     message
   }
 }
+
+export function removeFromList(i) {
+  return {
+    type: 'REMOVE_FROM_LIST',
+    i
+  }
+}
