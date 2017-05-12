@@ -7,13 +7,19 @@ block_1_bundle:
   version: 1.x
   js:
     react/build/block1.bundle.js: {}
+  dependencies:
+    - react_blocks/vendor_bundle
 
 block_2_bundle:
   version: 1.x
   js:
     react/build/block2.bundle.js: {}
+  dependencies:
+    - react_blocks/vendor_bundle
 
 block_3_bundle:
   version: 1.x
   js:
     react/build/block3.bundle.js: {}
+  dependencies:
+    - react_blocks/vendor_bundle

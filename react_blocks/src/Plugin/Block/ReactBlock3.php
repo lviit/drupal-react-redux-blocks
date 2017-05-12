@@ -21,7 +21,6 @@ class ReactBlock3 extends BlockBase {
     return [
       '#attached' => [
         'library' => [
-          'react_blocks/vendor_bundle',
           'react_blocks/block_3_bundle',
         ],
       ],
