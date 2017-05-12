@@ -12,3 +12,8 @@ block_2_bundle:
   version: 1.x
   js:
     react/build/block2.bundle.js: {}
+
+block_3_bundle:
+  version: 1.x
+  js:
+    react/build/block3.bundle.js: {}

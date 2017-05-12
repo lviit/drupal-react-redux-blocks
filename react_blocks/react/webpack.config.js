@@ -11,12 +11,14 @@ module.exports = {
   entry: {
     block1: APP_DIR + '/Block1.js',
     block2: APP_DIR + '/Block2.js',
+    block3: APP_DIR + '/Block3.js',
     vendor: [
       'react',
       'react-dom',
       'redux',
       'react-redux',
-      'redux-localstorage'
+      'redux-localstorage',
+      'axios'
     ]
   },
   output: {
