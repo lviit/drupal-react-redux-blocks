@@ -2,7 +2,7 @@ import { createStore, compose } from 'redux';
 import persistState from 'redux-localstorage';
 
 // root reducer
-import rootReducer from './reducers/index';
+import rootReducer from '../reducers/index';
 
 // create an object for the default data
 const defaultState = {

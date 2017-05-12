@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
-import { mapStateToProps, mapDispachToProps } from '../MapToProps';
+import { mapStateToProps, mapDispachToProps } from '../utils/MapToProps';
 
 class Products extends React.Component {
   constructor() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { mapStateToProps, mapDispachToProps } from '../MapToProps';
+import { mapStateToProps, mapDispachToProps } from '../utils/MapToProps';
 
 class List extends React.Component {
   handleClick(e, i) {

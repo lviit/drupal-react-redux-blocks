@@ -1,5 +1,5 @@
 import { bindActionCreators } from 'redux';
-import * as actionCreators from './actions/actionCreators';
+import * as actionCreators from '../actions/actionCreators';
 
 export function mapStateToProps(state) {
   return {
