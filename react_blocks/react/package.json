@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "auth0-lock": "^10.16.0",
     "axios": "^0.16.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",

@@ -12,27 +12,28 @@ module.exports = {
     block1: APP_DIR + '/Block1.js',
     block2: APP_DIR + '/Block2.js',
     block3: APP_DIR + '/Block3.js',
+    authblock: APP_DIR + '/AuthBlock.js',
     vendor: [
       'react',
       'react-dom',
       'redux',
       'react-redux',
       'redux-localstorage',
-      'axios'
+    //  'axios' axios needed only in block 3
     ]
   },
   output: {
     path: BUILD_DIR,
     filename: "[name].bundle.js"
   },
-  plugins: [
+  plugins: [ 
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
-     new webpack.optimize.UglifyJsPlugin({
+    new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
       },

@@ -23,3 +23,10 @@ block_3_bundle:
     react/build/block3.bundle.js: {}
   dependencies:
     - react_blocks/vendor_bundle
+
+auth_block_bundle:
+  version: 1.x
+  js:
+    react/build/authblock.bundle.js: {}
+  dependencies:
+    - react_blocks/vendor_bundle

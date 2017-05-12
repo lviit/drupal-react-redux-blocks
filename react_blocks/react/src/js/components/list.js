@@ -5,8 +5,6 @@ import { mapStateToProps, mapDispachToProps } from '../utils/MapToProps';
 class List extends React.Component {
   handleClick(e, i) {
     e.preventDefault();
-    console.log(this.props);
-    console.log(i);
     this.props.removeFromList(i);
   }
   render() {

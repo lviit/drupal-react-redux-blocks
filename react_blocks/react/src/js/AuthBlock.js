@@ -2,11 +2,11 @@ import React from 'react';
 import { render } from 'react-dom';
 import store from './utils/store';
 import { Provider } from 'react-redux';
-//import Form from './components/Form';
+import Login from './components/Login';
 
 render(
   <Provider store={store}>
-    <Form />
+    <Login />
   </Provider>,
-  document.getElementById('block-reactblock1'),
+  document.getElementById('block-reactauthblock'),
 );
