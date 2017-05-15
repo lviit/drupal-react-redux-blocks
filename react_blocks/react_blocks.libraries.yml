@@ -30,3 +30,4 @@ auth_block_bundle:
     react/build/authblock.bundle.js: {}
   dependencies:
     - react_blocks/vendor_bundle
+    - core/drupalSettings

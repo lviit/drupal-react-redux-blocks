@@ -1,0 +1,10 @@
+<?php
+/**
+ * Implements hook_page_attachments().
+ */
+function react_blocks_page_attachments(array &$page) {
+  $page['#attached']['drupalSettings']['react_blocks'] = [
+    'auth0_domain' => \Drupal::config('react_blocks.config')->get('auth0_domain'),
+    'auth0_client_id' => \Drupal::config('react_blocks.config')->get('auth0_client_id'),
+  ];
+}
