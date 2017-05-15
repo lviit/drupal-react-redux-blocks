@@ -14,16 +14,18 @@ class Login extends React.Component {
     }
 
     // for webpack-dev-server
-    //const auth0_domain = 'http://www.example.com';
-    //const auth0_client_id = '123456789';
-    // this.auth = new AuthService(auth0_client_id, auth0_domain);
+    /*
+    const auth0_domain = 'lviit.eu.auth0.com';
+    const auth0_client_id = 'DXkjY-alqzsYhvFSFOITWeVzfL700wOU';
+    this.auth = new AuthService(auth0_client_id, auth0_domain);
+    */
 
   }
   render() {
     return (
       <div>
         <h2>Login</h2>
-        { this.props.authentication.idToken ?
+        { this.auth.loggedIn() ?
           <button onClick={(e) => this.auth.logout()}>Logout</button> :
           <button onClick={(e) => this.auth.login()}>Login</button>
         }

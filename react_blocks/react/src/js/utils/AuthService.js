@@ -37,12 +37,13 @@ export default class AuthService {
   }
 
   getToken() {
-    // Retrieves the user token from local storage
-    return localStorage.getItem('id_token')
+    // Retrieves the user token from store
+    const state = store.getState();
+    return state.authentication.idToken;
   }
 
   logout() {
-    // Clear user token and profile data from local storage
+    // dispatch logout to redux
     store.dispatch(logout());
   }
 }
