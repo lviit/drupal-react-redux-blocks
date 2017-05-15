@@ -19,14 +19,15 @@ module.exports = {
       'redux',
       'react-redux',
       'redux-localstorage',
-    //  'axios' axios needed only in block 3
+    //  'axios', axios needed only in block 3
+    // 'auth0-lock' needed only in block 4
     ]
   },
   output: {
     path: BUILD_DIR,
     filename: "[name].bundle.js"
   },
-  plugins: [ 
+  plugins: [
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')

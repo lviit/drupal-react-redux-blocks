@@ -12,7 +12,12 @@ class Products extends React.Component {
       }
     };
   }
-  fetchProducts() {
+  fetchProducts(idToken) {
+    /* the token is not really needed
+    var config = {
+      headers: {'authorization': idToken}
+    };
+    */
     axios
       .get('https://jsonplaceholder.typicode.com/posts')
       .then(products => this.setState({products}))
@@ -23,7 +28,12 @@ class Products extends React.Component {
     this.props.addToList(title);
   }
   componentWillMount() {
-    this.fetchProducts();
+    const token = this.props.authentication.idToken;
+    token && this.fetchProducts(token);
+  }
+  componentDidUpdate() {
+    const token = this.props.authentication.idToken;
+    token && !this.state.products.data.length && this.fetchProducts(token);
   }
   render() {
     return (

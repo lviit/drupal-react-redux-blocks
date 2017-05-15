@@ -1,5 +1,6 @@
-
 import Auth0Lock from 'auth0-lock';
+import store from './store';
+import { login, logout } from '../actions/actionCreators';
 
 export default class AuthService {
   constructor(clientId, domain) {
@@ -31,8 +32,8 @@ export default class AuthService {
   }
 
   setToken(idToken) {
-    // Saves user token to local storage
-    localStorage.setItem('id_token', idToken)
+    // dispatch login to redux
+    store.dispatch(login(idToken));
   }
 
   getToken() {
@@ -42,6 +43,6 @@ export default class AuthService {
 
   logout() {
     // Clear user token and profile data from local storage
-    localStorage.removeItem('id_token');
+    store.dispatch(logout());
   }
 }

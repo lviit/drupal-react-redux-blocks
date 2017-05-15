@@ -21,7 +21,6 @@ class ReactAuthBlock extends BlockBase {
     return [
       '#attached' => [
         'library' => [
-          'react_blocks/vendor_bundle',
           'react_blocks/auth_block_bundle',
         ],
       ],

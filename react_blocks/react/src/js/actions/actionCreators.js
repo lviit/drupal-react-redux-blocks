@@ -12,3 +12,16 @@ export function removeFromList(i) {
     i
   }
 }
+
+export function login(idToken) {
+  return {
+    type: 'LOGIN',
+    idToken
+  }
+}
+
+export function logout() {
+  return {
+    type: 'LOGOUT',
+  }
+}
